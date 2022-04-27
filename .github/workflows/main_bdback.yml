@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'bdback'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F0F0BDD60B4C4961A247A8EFB9238E8B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_28863B9E8529484483A289374151C925 }}
           package: .
