@@ -3,10 +3,6 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const cors = require('cors');
 const initDB = require('./config/db')
-
-// const Presolicitud = require('./models/formulario0')
-// const register = require('./models/register')
-
 const presolicitudrouters = require('./routes/presolicitud')
 const registerRouters = require('./routes/register')
 const confirmationRouters = require('./routes/confirmation')
@@ -14,7 +10,7 @@ const loginRouters = require('./routes/login')
 const userRouters = require('./routes/user')
 
 //Configuration app
-const port = 8081;
+const port = process.env.PORT || 8081
 
 //INITIALIATION
 const app = express();

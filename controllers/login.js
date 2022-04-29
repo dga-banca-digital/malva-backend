@@ -25,12 +25,12 @@ const login = async (req, res) => {
         }
 
         // revisa que la cuenta esté verificada
-        if(client.status !== 'VERIFIED') {
-            return res.json({
-                succes: false,
-                msg: "La cuenta no está verificada"
-            });
-        }
+        // if(client.status !== 'VERIFIED') {
+        //     return res.json({
+        //         succes: false,
+        //         msg: "La cuenta no está verificada"
+        //     });
+        // }
 
         // da acceso
         return res.json({
